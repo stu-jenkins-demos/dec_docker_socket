@@ -52,7 +52,7 @@ spec:
                     sh "docker image build -t ${DOCKER_IMAGE} ."
                     sh 'docker images'
                     sh 'docker version'                    
-                    sh 'docker-compose version'
+                 
                    // sh "docker run -p 8032:90 ${DOCKER_IMAGE}"
                 }
             }
