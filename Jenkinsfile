@@ -34,11 +34,16 @@ spec:
     volumeMounts:
     - mountPath: /var/run/docker.sock
       name: docker-socket
+    - mountPath: /tmp123
+      ebv-test-volume
   volumes:
   - name: docker-socket
     hostPath:
       path: /var/run/docker.sock
       type: Socket
+  - name: ebv-test-volume
+      volumeID: vol-08cbb0c62b2fc0867
+      fsType: ext4
         
 """
         }
