@@ -31,7 +31,7 @@ spec:
         stage('docker') {
             steps {
                 container('docker') {
-                    dockerLogin()
+                    
                     //put stuff here 
                 }
             }
