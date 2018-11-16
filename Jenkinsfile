@@ -32,6 +32,8 @@ spec:
             steps {
                 container('docker') {
                     
+                    sh 'docker version'
+                    
                     //put stuff here 
                 }
             }
